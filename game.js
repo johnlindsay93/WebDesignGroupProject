@@ -119,13 +119,12 @@ document.addEventListener(
                 audio.volume = 1;
                 music.volume = 1;
                 fx.volume = 1;
-                muteButton.style.backgroundColor = "aliceblue";
+
             }
             else {
                 audio.volume = 0;
                 music.volume = 0;
                 fx.volume = 0;
-                muteButton.style.backgroundColor = "slategrey";
             }
         }
     });

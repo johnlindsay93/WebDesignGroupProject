@@ -1,10 +1,40 @@
+/* Universal settings / fonts */
 * {
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box;
+    box-sizing: border-box; 
+}
+
+.color {
+    background-color:  #F2EFE9   
+}
+
+.font-lato {
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.font-ubuntu{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+
+  #marginTop {
+    z-index:-1;
+    margin-top: -100px;
+    height: 100px;
+    width: 100vw;
+    background-color: white;
+}
+
+.borderTop {
+    border: 4px solid #BFB48F;
 }
 
 /* Makes logo correct size*/
+
 header .navbar-brand img{
     width: 75px;
     height: 75px;
@@ -29,8 +59,8 @@ header .caption p {
 .containerTop {
     display: flexbox;
     justify-content: space-around;
-    background-color: rgb(184, 255, 251);
     border: 5px solid rgb(30, 30, 30);
+    background-color: #904E55;
     text-align: center;
     margin: 50px;
     height: 50px;
@@ -42,6 +72,7 @@ header .caption p {
     text-align: center;
     font-size: large;
     height: 100px;
+
 }
 
 body { 
@@ -75,7 +106,7 @@ td{
     padding: 10px;
     font-size: 16px; 
     cursor: pointer; 
-    background-color: aliceblue;
+    background-color: #904E55;
     text-align: center;
 }
   
@@ -83,15 +114,14 @@ td{
     height: 150px; 
     border: 5px solid rgb(30, 30, 30); 
     cursor: pointer; 
-    background: rgb(67, 69, 73); 
+    background:#564E58;
     border-radius: 100px; 
 } 
   
 .mole { 
-    z-index: 2;
-    background-size: 200px;  
+        background-size: 200px;  
     background-image: url(https://cdn.pixabay.com/photo/2013/07/12/16/56/cruiser-151538_1280.png);
-    background-color: blue;
+    background-color: rgb(12, 93, 155);
 } 
 
 #muteButton {
@@ -100,17 +130,21 @@ td{
 }
 
 #muteButton:hover {
-    background-color: aqua;
+    background-color: #564E58;
+    color: white;
+
 }
 
 #startGame:hover {
-    background-color: aqua;
+    background-color: #564E58;
+    color: white;
 }
 
 .containerGame { 
-    background-color: rgb(184, 255, 251);
+    background-color: rgb(0, 221, 255);
     border: 5px solid rgb(30, 30, 30);
     display: grid; 
+    position: relative;
     grid-template-columns: repeat(3, 150px); 
     gap: 20px; 
     border: 5px solirgb(0, 0, 0); 
@@ -120,6 +154,7 @@ td{
 
 /* Homepage Styling */
 #homeBackground {
+    z-index: -2;
     width: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -127,6 +162,8 @@ td{
     background-size: cover;
     border-bottom: 8px solid #a0a426;
     margin-top: -300px;
+    min-height: 350px;
+    min-width: 350px;
     }
     
     #homeCall {
@@ -181,7 +218,7 @@ td{
     #homeTripBox {
         user-select: none;
         margin-top: 5vb;
-        width: 500px;
+        width: 100%;
         height: 400px;
         color: white;
         text-shadow: black 10px 2px 10px;
@@ -208,4 +245,83 @@ td{
         font-size: 0.5em;
         font-weight: 600;
     }
-    
+
+    #homeCruiseButton:hover {
+        color: black;
+        background-color: rgb(81, 184, 200);
+    }
+
+    #trip {
+        text-shadow: black 0px 5px 5px;
+        font-size: 1em;
+        font-weight: 500;
+        color: white;
+        font-family: "Lato", sans-serif;
+        font-weight: 900;
+        font-style: normal;
+    }
+
+.footer {
+    z-index: 1;
+}
+
+.fMinigame {
+    margin-top: 670px;
+}
+
+.fCruises {
+    margin-top: 1000px;
+    position: relative;
+}
+
+/* Responsive Web Design */
+@media screen and (max-width:980px) {
+    #pagewrap {width: 90%;}
+    #content {width: 60%;}
+    #sidebar {width: 30%;} 
+    .fCruises {
+        margin-top: 550px;
+    }
+}
+@media screen and (max-width:700px) {
+    #content {width: auto; float:none;}
+    #sidebar {display:none;}
+    body {font-size: 2vb;}
+    #homeCall2 {font-size: 0px;}
+    #homeCall {font-size: 3em;}
+    body {background-color: yellow;}
+
+    .containerGame { 
+        width: 470px; 
+        padding: 5%; 
+        grid-template-columns: repeat(3, 38%); 
+    } 
+    .hole { 
+        height: 50px; 
+        width: 33%; 
+        border-radius: 100px;
+    }
+    .mole { 
+        background-size: 50px;  
+    } 
+}
+
+@media screen and (max-width:580px) {
+    #content {width: auto; float: none;}
+    #sidebar {display:none;}
+    #homeCall {font-size: 0px}
+    body {background-color: red;}
+    #homeBackground {width: 100%;}
+    .hole { 
+        height: 50px; 
+        width: 50px; 
+        border-radius: 100px; 
+        gap: 10px;
+        margin-top: 800px;
+    } 
+}
+
+@media screen and (max-width:480px) {
+    #content {width: auto; float: none;}
+    #sidebar {display:none;}
+}

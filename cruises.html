@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cruises</title>
-    
+
+    <!-- Conor: Adding links for Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+        
     <!-- John: Adding links for bootstrap cdn-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
     rel="stylesheet" integrity="sha384-
@@ -26,18 +31,18 @@
     <!-- Referencing CSS file-->
     <link rel="stylesheet" href="style/style.css">
 </head>
-<body>
+<body class="color">
     <!-- John: Adding basic NavBar Layout via bootstrap -->
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
+        <nav class=" navbar navbar-expand-lg bg-body-tertiary borderTop">
+            <div class="container-fluid" >
             <a class="navbar-brand" href="index.html"> <img src="images/logo.png" alt=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link active " aria-current="page" href="index.html">Home</a>
                 <a class="nav-link" href="cruises.html">Cruises</a>
                 <a class="nav-link" href="form.html">Booking</a>
                 <a class="nav-link" href="minigame.html">Minigame</a>
@@ -46,11 +51,11 @@
             </div>
         </nav>
     </header>
-
+    
     <div class="container">
 
         <div class="text-center">
-            <h2>Take a look!</h2>
+            <h2 class="font-lato">Take a look!</h2>
             <p class="lead"> Take a look at the great Cruise Options we have for you!</p>
         </div>
 
@@ -60,7 +65,7 @@
                     <img src="images/spainish-coastline.jpeg" alt="spanish-coastline" class="img-fluid image-popup" 
                     data-text="This cruise provides the full Iberian experience!! Vist many cities around the Spanish and Portugese coasts includiing:
                     Bilbao, Ferrol, Lisbon, Seville, Gibraltar, Malaga, Valencia and Barcelona" >
-                    <p> Iberian Coastlines</p>
+                    <p class="font-ubuntu"> Iberian Coastlines</p>
                 </div>
             </div>
             <div class="col-6">
@@ -68,7 +73,7 @@
                     <img src="images/mediterranean.jpeg" alt="Mediterranean" class="img-fluid image-popup"
                     data-text="Experience all that the Mediterranean has to offer with this excellent Cruise! Visit cities such as Barcelona
                     Marseille, Monte Carlo, Florence, Rome, Naples, Corfu, Dubrovnik and Venice" >
-                    <p> Mediterranian</p>
+                    <p class="font-ubuntu"> Mediterranian</p>
                 </div>
             </div>
         </div>
@@ -78,14 +83,14 @@
                     <img src="images/alaska.jpeg" alt="alaska" class="img-fluid image-popup"
                     data-text="Explore the stunning western coastlines of Canada and Alaska on this epic cruise. Take in cities such as Vancouver, 
                     Ketchikan, Juneau, Skagway, Glacier Bay, College Fjord, Whittier and Hubbard Glacier!">
-                    <p>Alaska</p>
+                    <p class="font-ubuntu">Alaska</p>
                 </div>
             </div>
             <div class="col-6">
                 <div class="caption text-center">
                     <img src="images/south-pacific.jpeg" alt="south-pacific" class="img-fluid image-popup"
                     data-text="">
-                    <p>South Pacific</p>
+                    <p class="font-ubuntu">South Pacific</p>
                 </div>
             </div>
         </div>
@@ -111,7 +116,7 @@
     </div>
 
 
-    <footer class="footer">
+    <footer class="footer fCruises">
     <hr>
     Authors: John Lindsay - x23230681  & Conor Plunkett - x23290064<br>
     All images & audio sourced from https://pixabay.com/ royalty free section.
