@@ -45,24 +45,29 @@ form.addEventListener('submit', (e) => {
         messages.push('You must enter a valid email address')
     }
 
+    // validate a number is added
     if (isNaN(number)){
         messages.push('Please enter a valid number')
     }
 
+    //validate an option was selected
     var selectedOption = dropdown.value;
     if (selectedOption === '') {
         messages.push('Please select a cruise')
     }
 
+    //validate a radio button is clicked
     var checked = Array.from(radioButton).some(radio => radio.checked);
     if (!checked) {
         messages.push('Please choose yes or no')
     }
 
+    //validate a checkbox is checked
     if (!checkbox.checked){
         messages.push('Please confirm your information')
     }
 
+    // if one or more of the above error messages, join together
     if (messages.length > 0){
         e.preventDefault()
         errorElement.innerText = messages.join(', ')
