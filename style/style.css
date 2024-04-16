@@ -1,19 +1,211 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
 /* Makes logo correct size*/
-.navbar-brand img{
+header .navbar-brand img{
     width: 75px;
     height: 75px;
 }
 
-.caption{
+header .caption{
     text-align: center;
     margin-bottom: 20px;
 }
 
-.caption img{
+header .caption img{
     width: 400px;
     height: 250px;
 }
 
-.caption p {
+header .caption p {
     margin-top: 10px;
 }
+
+/* Game Styling */
+
+.containerTop {
+    display: flexbox;
+    justify-content: space-around;
+    background-color: rgb(184, 255, 251);
+    border: 5px solid rgb(30, 30, 30);
+    text-align: center;
+    margin: 50px;
+    height: 50px;
+    width: 400px;
+    border-radius: 20px;
+ 
+}
+.container {
+    text-align: center;
+    font-size: large;
+    height: 100px;
+}
+
+body { 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+} 
+  
+table {
+    display: flex;
+    align-items: space-evenly;
+    justify-content: space-evenly;
+    font-size: 18pt;
+    font-weight: 550;
+}
+
+td{
+    width: 150px;
+}
+
+.game-info { 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+} 
+  
+.button { 
+    margin-bottom: 20px; 
+    padding: 10px;
+    font-size: 16px; 
+    cursor: pointer; 
+    background-color: aliceblue;
+    text-align: center;
+}
+  
+.hole { 
+    height: 150px; 
+    border: 5px solid rgb(30, 30, 30); 
+    cursor: pointer; 
+    background: rgb(67, 69, 73); 
+    border-radius: 100px; 
+} 
+  
+.mole { 
+    z-index: 2;
+    background-size: 200px;  
+    background-image: url(https://cdn.pixabay.com/photo/2013/07/12/16/56/cruiser-151538_1280.png);
+    background-color: blue;
+} 
+
+#muteButton {
+    border-radius: 25px;
+    font-weight: 550;
+}
+
+#muteButton:hover {
+    background-color: aqua;
+}
+
+#startGame:hover {
+    background-color: aqua;
+}
+
+.containerGame { 
+    background-color: rgb(184, 255, 251);
+    border: 5px solid rgb(30, 30, 30);
+    display: grid; 
+    grid-template-columns: repeat(3, 150px); 
+    gap: 20px; 
+    border: 5px solirgb(0, 0, 0); 
+    padding: 20px; 
+    border-radius: 100px; 
+}     
+
+/* Homepage Styling */
+#homeBackground {
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    border-bottom: 8px solid #a0a426;
+    margin-top: -300px;
+    }
+    
+    #homeCall {
+        color: rgb(255, 255, 255);
+        position: absolute;
+        margin-top: -1100px;
+        font-size: 5em;
+        text-align: center;
+        text-shadow: black 10px 2px 10px;
+        user-select: none
+    }
+    
+    #homeCall2 {
+        color: rgb(255, 255, 255);
+        position: absolute;
+        font-size: 2.3em;
+        text-align: center;
+        margin-bottom: 950px;
+        text-shadow: black 10px 2px 10px;
+        user-select: none 
+    }
+    
+    .transparent {
+        background-color: transparent;
+    }
+    
+    .homeMid {
+        display: flex;
+        justify-content: space-around
+    }
+    
+    .homeBoxCall {
+        margin: 5vb;
+    }
+    #homeTextBox {
+        user-select: none;
+        margin-top: 5vb;
+        width: auto;
+        min-height: 10vb;
+        color: white;
+        text-shadow: black 10px 2px 10px;
+        border: 4px solid #a0a426;
+        font-size: 20pt;
+        padding: 10vb;
+        text-align: center;
+        width: 80%;
+        background-image: url(https://cdn.pixabay.com/photo/2014/05/30/12/17/restaurant-358238_1280.jpg);
+        background-size: cover;
+        background-position: 0;
+    }
+    
+    #homeTripBox {
+        user-select: none;
+        margin-top: 5vb;
+        width: 500px;
+        height: 400px;
+        color: white;
+        text-shadow: black 10px 2px 10px;
+        border: 4px solid #a0a426;
+        font-size: 20pt;
+        font-size: 2em;
+        padding: 10vb;
+        text-align: center;
+        border-radius: 5px;
+        background-image: url(https://cdn.pixabay.com/photo/2015/01/14/18/47/globe-599486_1280.jpg);
+        background-size: cover;
+        background-position: 0;
+        margin-bottom: 50px;
+    }
+    
+    #homeCruiseButton {
+        position: relative;
+        height: 50px;
+        width: 200px;
+        border-radius: 25px;
+        cursor: pointer;
+        background-color: rgb(81, 184, 200);
+        color: white;
+        font-size: 0.5em;
+        font-weight: 600;
+    }
+    

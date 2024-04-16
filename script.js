@@ -14,4 +14,14 @@ $(document).ready(function() {
     window.location.href = "form.html?prepopulate=" + encodeURIComponent($("#popup-text").text());
     });
 });
+
+/* Conor: Homepage get random trip function */
+function getTrip() {
+    // Create array of possbile locations
+    const locations = [" the Caribbean", "South Ameica", "Southern Europe", "Greece", "the Bahamas", "the Canary Islands", ];
+    // Select random item from array & display on homepage
+    let randomLocation = locations[Math.floor(Math.random() * locations.length)];
+    document.getElementById("trip").innerHTML = randomLocation;
+}
+
     
