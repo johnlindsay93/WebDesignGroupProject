@@ -17,3 +17,7 @@
 .caption p {
     margin-top: 10px;
 }
+
+.error {
+    background-color: red;
+}
