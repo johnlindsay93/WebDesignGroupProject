@@ -43,12 +43,9 @@ document.addEventListener(
         }
 
         function moleWhack() {
-            if (!gameOver == true) {
                 // On click increase score & display on screen
-                score++;
+                score = score + 1;
                 scoreDisplay.textContent = `${score}`;
-
-            }
             // Remove mole attributes when whacked & play effect
             this.classList.remove('mole');
             audio.play();
@@ -57,10 +54,6 @@ document.addEventListener(
 
 
         function startGame() {
-            if (!gameOver == true) {
-                return;
-            }
-
             // Start music, reset & display declared variables for new game
             music.currentTime = 0;
             music.play();
@@ -100,13 +93,11 @@ document.addEventListener(
             }, speed);
 
             moleInterval = setInterval(() => {
-                // Mole frequency, altered by declared var speed
-                if (!gameOver == true) mole();
+                // Mole frequency, altered by var speed. Ensure game playing.
+                if (gameOver == false) mole();
             },
                 speed);
-
         }
-
         // Call startGame function on click of start button
         startButton.addEventListener("click", startGame);
 

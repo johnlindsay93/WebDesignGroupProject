@@ -18,7 +18,7 @@ $(document).ready(function() {
 /* Conor: Homepage get random trip function */
 function getTrip() {
     // Create array of possbile locations
-    const locations = [" the Caribbean", "South Ameica", "Southern Europe", "Greece", "the Bahamas", "the Canary Islands", ];
+    const locations = [" the Caribbean", "South Ameica", "Southern Europe", "Greece", "the Bahamas", "the Canary Islands", "Alaska", " the Iberian Coastlines", "the South Pacific", "the Mediteranean"];
     // Select random item from array & display on homepage
     let randomLocation = locations[Math.floor(Math.random() * locations.length)];
     document.getElementById("trip").innerHTML = randomLocation;
