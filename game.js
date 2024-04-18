@@ -43,9 +43,9 @@ document.addEventListener(
         }
 
         function moleWhack() {
-                // On click increase score & display on screen
-                score = score + 1;
-                scoreDisplay.textContent = `${score}`;
+            // On click increase score & display on screen
+            score = score + 1;
+            scoreDisplay.textContent = `${score}`;
             // Remove mole attributes when whacked & play effect
             this.classList.remove('mole');
             audio.play();
