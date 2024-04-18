@@ -30,7 +30,6 @@ const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 form.addEventListener('submit', (e) => {
     // Prevent default behaviour on submit
-    e.preventDefault()
     let messages = []
 
     // validate there is a name enterred
@@ -46,7 +45,7 @@ form.addEventListener('submit', (e) => {
     }
 
     // validate a number is added
-    if (isNaN(number)){
+    if (!isNaN(number)){
         messages.push('Please enter a valid number')
     }
 

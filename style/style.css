@@ -332,3 +332,26 @@ td{
    .fMinigame {margin: 0px;}
 }
 
+/* Makes logo correct size*/
+.navbar-brand img{
+    width: 75px;
+    height: 75px;
+}
+
+.caption{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.caption img{
+    width: 400px;
+    height: 250px;
+}
+
+.caption p {
+    margin-top: 10px;
+}
+
+.error {
+    background-color: red;
+}
