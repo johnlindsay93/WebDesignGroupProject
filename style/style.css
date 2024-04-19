@@ -355,3 +355,8 @@ td{
 .error {
     background-color: red;
 }
+
+/* CSS test fixes */
+.page-link .btn-check .card-header-tabs .form-check-input .list-group-item {
+    background-color: brown;
+}
