@@ -56,6 +56,7 @@
         </nav>
     </header>
 
+    <!-- Creates an error section which will appeat if the form fails validation-->
     <div class="error text-center" id="error"></div>
     <div class="container-lg">
         <div class="text-center">
@@ -67,15 +68,19 @@
 
             <div class="col-lg-6">
                 <form id="booking-form">
+                    <!-- Creates email field-->
                     <label for="email" class="form-label"> Please Enter Your Email Address</label>
                     <input type="email" class="form-control" id="email" placeholder="Enter Email Here">
-
+                    
+                    <!-- Creates text field-->
                     <label for="name" class="form-label">Please Enter Your Full Name</label>
                     <input type="text" class="form-control" id="name" placeholder="Enter Name Here">
 
+                    <!-- Creates number field-->
                     <label for="number" class="form-label">Please Enter Your Phone Number</label>
                     <input type="number" class="form-control" id="number" placeholder="Enter Number Here">
 
+                    <!-- Creates dropdown menu with default value-->
                     <label for="cruise" class="form-label">Which Cruise Would You Like To Book?</label>
                     <select id="cruise" class="form-select">
                         <option value="" selected disabled hidden>Choose here</option>
@@ -85,6 +90,7 @@
                         <option value="south-pacific" >South Pacific</option>
                     </select>
 
+                    <!-- Creates radio button with 2 options -->
                     <label for="flexRadioDefault1" class="form-label"> Would You Like To Receive Marketting Emails?</label>
                     <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                     <label class="form-check-label" for="flexRadioDefault1">
@@ -95,6 +101,7 @@
                         No
                     </label>
 
+                    <!-- Creates checkbox option-->
                     <label for="flexCheckDefault" class="form-label"> I confirm the above information is correct</label>
                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
 
