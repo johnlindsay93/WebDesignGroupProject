@@ -59,7 +59,7 @@ header .caption p {
 /* Game Styling */
 
 .containerTop {
-    display: flexbox;
+    display: flex;
     justify-content: space-around;
     border: 5px solid rgb(30, 30, 30);
     background-color: #904E55;
@@ -86,7 +86,7 @@ body {
   
 table {
     display: flex;
-    align-items: space-evenly;
+    align-items: center;
     justify-content: space-evenly;
     font-size: 18pt;
     font-weight: 550;
@@ -142,7 +142,6 @@ td{
     position: inherit;
     grid-template-columns: repeat(3, 150px); 
     gap: 20px; 
-    border: 5px solirgb(0, 0, 0); 
     padding: 20px; 
     border-radius: 100px; 
 }     
