@@ -100,4 +100,5 @@ function getTrip() {
     document.getElementById("trip").innerHTML = randomLocation;
 }
 
+
     

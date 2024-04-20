@@ -1,4 +1,8 @@
 //Conor: Whack-A-Mole minigame
+    /* References assisting whack a mole development:
+    1.  https://www.educative.io/blog/whack-a-mole-game-javascript
+    2.  https://www.geeksforgeeks.org/whack-a-mole-game-using-html-css-and-javascript/
+    3. https://medium.com/@divyamcm/whack-a-mole-game-using-html-css-and-javascript-84b108ec5c8e */
 // Ensure document parsed & following scripts ready for execution:
 document.addEventListener(
 
